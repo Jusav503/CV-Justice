@@ -1,0 +1,32 @@
+@media (max-width: 1070px){
+    main{
+        padding: 20px 30px 10px 30px;
+    }
+}
+
+
+@media (max-width: 780px){
+    header{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    main{
+        padding: 20px 5px 10px 5px;
+        display: block;
+    }
+    .article{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .options{
+        flex-direction: row;
+        width: 390px;
+        height: 50px;
+    }
+    
+    #titulo{
+        font-size: 20px;
+    }
+    
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2825e505ce.js" crossorigin="anonymous"></script>
+    <title>Justice Velasco CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="/script.js"></script>
+    <script src="/data.js"></script>
+    <script src="/JQuery/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="/img/photo.jpg" alt="photoprofile" class="photo">
+        <h1>Justice</h1>
+        <!-- <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label> -->
+    </header>
+    <main>
+        <nav class="nav-bar">
+            <ul class="options">
+                <li>
+                    <i class="fas fa-child" onclick="soy()"></i>
+                    <div class="selector" onclick="soy()">¿Quién soy?</div>
+                </li>
+                <li>
+                    <i class="fas fa-brain"></i>
+                    <div class="selector" onclick="perfilCompetencial()">Perfil competencial</div>
+                </li>
+                <li>
+                    <i class="fas fa-laptop-code"></i>
+                    <div class="selector" onclick="informatica()">Informática</div>
+                </li>
+                <li>
+                    <i class="fas fa-fighter-jet"></i>
+                    <div class="selector" onclick="habilidades()">Habilidades</div>
+                </li>
+                <li>
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="selector" onclick="formacion()">Formación</div>
+                </li>
+                <li>
+                    <i class="fas fa-box-open"></i>
+                    <div class="selector" onclick="experiencia()">Experiencia laboral</div>
+                </li>
+                <li>
+                    <i class="fas fa-users"></i>
+                    <div class="selector" onclick="contacto()">¡Contáctame!</div>
+                </li>
+            </ul>
+        </nav>
+        <article id="article" class="article">
+            <h1 id="titulo">Presiona un icono para ver la información!</h1>
+            <p id="descripcion"></p>     
+        </article>
+    </main>
+    <footer>
+        <p>Justice Ariel Velasco Gómez | 2002-2021</p>
+    </footer>
+
+</body>
+</html>

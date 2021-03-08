@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    padding: 15px;
+    background-color: #DFE5EC;
+}
+header{
+    display: flex;
+    margin-right: 500px;
+    margin-left: 500px;
+    .photo{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 10px;
+    }
+    h1{
+        font-family: 'Sansita';
+    }
+    // .fa-bars{
+    //     margin-top: -20px;
+    //     font-size: 32px;
+    //     cursor: pointer;
+    //     margin-left: 20px;
+    // }
+}
+main{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-gap: 20px;
+    padding: 20px 110px 10px 110px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    grid-column: 1/1;
+}
+.options{
+    width: 50px;
+    height: 390px;
+    background: #FFFFFF;
+    box-shadow: -3px 4px 4px #8B8F94;
+    border-radius: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 0px 20px 0px;
+    li{
+        list-style: none;
+        text-align: center;
+        display: flex;
+        flex-direction:inherit ;
+        .selector{
+            position: absolute;
+            background-color: #ffffff;
+            display: none;
+            margin-top: -10px;
+            margin-left: 40px;
+            width: 150px;
+            height: 35px;
+            border-radius: 0px 34px 34px 0px;           
+            padding-top: 5px;
+            font-size: 15px;
+            font-family: 'sansita';
+            color: #0292FB;
+            cursor: pointer;
+        }
+    }
+    li:hover{
+        color: #0292FB;
+    }
+    li:hover .selector{
+        display: block;
+    }
+}
+.article{
+    height: 440px;
+    background: linear-gradient(115.42deg, #0292FB 25.33%, #7E38D7 77.21%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.65);
+    border-radius: 10px;
+    padding: 30px;
+    h1{
+        font-family: 'sansita';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 77px;
+        color: #FFFFFF;
+    }
+    p{
+        display: block;
+        .arrow{
+            width:240px;
+            height: 200px;
+            margin-top: -30px;
+            margin-left: -70px;
+        }
+        .smiley{
+            width:150px;
+            margin-left: 400px;
+            margin-top: -160px;
+        }
+    }
+}
+
+
+@mixin article-content{
+    height: 440px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.65);
+    border-radius: 10px;
+    padding: 30px;
+    margin: -30px -30px 0px -30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sobreMi{
+    background-image: url('https://w.wallhaven.cc/full/2k/wallhaven-2kdw2m.jpg');
+    @include article-content;
+}
+.perfilCompetencial{
+    @include article-content;
+    background-image: url('https://1.bp.blogspot.com/-wtLUnXd_vfo/X4RpYTaq8vI/AAAAAAAAbxw/RrfOtQpFeGEhhpJsyAnadYH6ZGyeobICQCLcBGAsYHQ/s16000/SPACE-MISSION-2-DESKTOP-HD.png');
+}
+.informatica{
+    background-image: url('https://w.wallhaven.cc/full/45/wallhaven-45oml7.png');
+    @include article-content;
+}
+.habilidades{
+    background-image: url('https://w.wallhaven.cc/full/4x/wallhaven-4xvpqo.png');
+    @include article-content;
+    .textHabilidades{
+        text-align: center;
+        color: white;
+    }
+}
+.formacion{
+    background-image: url('https://wallpaperaccess.com/full/498485.jpg');
+    @include article-content;
+}
+.experiencia{
+    background-image: url('/img/error.jpg');
+    @include article-content;
+}
+.texArticle{
+    color: white;
+}
+.textBlack{
+    color: black !important;
+}
+.textDescription{
+    color: white;
+    margin-top: 45px;
+}
+.contacto{
+    a{
+        text-decoration: none;
+    }
+    .fas1{
+        display: flex;
+        color: white;
+        font-size: 25px;
+        margin: 10px;
+        h6{
+            margin-left: 10px;
+        }
+    }    
+}
+
+
+footer{
+    padding: 30px 20px 0px 20px;
+    p{
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 10px;
+    }
+}
